@@ -61,7 +61,7 @@ source /home/apps/.rvm/scripts/rvm
 
 ## Install DB (自行安裝專案使用的DB)
 
-* [[安裝PostgreSQL|installing postgresql 9.3.x on ubuntu 12.04 ]]
+* 安裝PostgreSQL|installing postgresql 9.3.x on ubuntu 12.04
 
 ## Install git
 
