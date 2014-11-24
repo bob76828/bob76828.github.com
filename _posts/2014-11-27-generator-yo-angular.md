@@ -77,12 +77,12 @@ It takes advantage of the gulp build tool and makes use of bower and npm for dep
 
 Available generators:
 
-* [yo-angular]
-* [yo-angular:page]
-* [yo-angular:directive]
-* [yo-angular:model]
-* [yo-angular:controller]
-* [yo-angular:service]
+* yo-angular
+* yo-angular:page
+* yo-angular:directive
+* yo-angular:model]
+* yo-angular:controller
+* yo-angular:service
 
 **Note: Generators are to be run from the root directory of your app.**
 
