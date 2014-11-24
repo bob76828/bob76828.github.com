@@ -1,0 +1,33 @@
+---
+layout: page
+header-img: "img/home-bg.jpg"
+title: "bob76828.github.io"
+---
+{% include JB/setup %}
+<div class="well">
+    {% for post in paginator.posts %}
+    <p class="pull-right text-muted">{{ post.date | date: "%Y/%m/%d" }}</p>
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h4 class="list-group-item-heading"><p>{{ post.title }}</p></h4>
+    </a>
+    <blockquote>
+        {% if post.subtitle %}
+        <p class="list-group-item-text">{{ post.subtitle }}</p>
+        {% endif %}
+        <small>Posted by <cite title="Source Title">{{ post.author }}</cite></small>
+    </blockquote>
+    <hr> {% endfor %}
+
+    <!-- Pager -->
+    {% if paginator.total_pages > 1 %}
+    <div class="pull-right">
+        {% if paginator.previous_page %}
+        <a class="btn btn-material-bluegrey btn-raised" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="mdi-navigation-arrow-back"></i> 較新文章</a> {% endif %} {% if paginator.next_page %}
+        <a class="btn btn-material-bluegrey btn-raised" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">較舊文章 <i class="mdi-navigation-arrow-forward"></i></a> {% endif %}
+    </div>
+    {% endif %}
+    </br>
+    </br>
+    </br>
+</div>
+

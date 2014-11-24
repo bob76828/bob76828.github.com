@@ -3,10 +3,11 @@ markdown: redcarpet
 highlighter: pygments
 # This is the default format. 
 # For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:categories/:year/:month/:day/:title 
+#permalink: /:categories/:year/:month/:day/:title 
+permalink: pretty
+paginate: 5
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-highlighter: pygments
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
@@ -70,9 +71,9 @@ JB :
   # These paths are to the main pages Jekyll-Bootstrap ships with.
   # Some JB helpers refer to these paths; change them here if needed.
   #
-  archive_path: /archive.html
-  categories_path : /categories.html
-  tags_path : /tags.html
+  archive_path: /archive/
+  categories_path : /categories/
+  tags_path : /tags/
   atom_path : /atom.xml
   rss_path : /rss.xml
 
@@ -81,19 +82,19 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : facebook
+    provider : disqus
     disqus :
-      short_name : 
+      short_name : bob-blog-github
     livefyre :
       site_id : 
     intensedebate :
       account : 
     facebook :
-      appid : 615673651892905
+      appid : 
       num_posts: 5
       width: 580
       colorscheme: light
-   
+
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
   # Set 'provider' to false to turn analytics off globally.
@@ -117,7 +118,7 @@ JB :
   #
   sharing :
     provider : false
-    
+
   # Settings for all other include helpers can be defined by creating 
   # a hash with key named for the given helper. ex:
   #
@@ -128,4 +129,3 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
-  
