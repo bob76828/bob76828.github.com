@@ -6,6 +6,8 @@ date:       2014-11-27 12:00:00
 author:     "bob76828"
 ---
 
+# A Yeoman generator for AngularJs project #
+
 This is a yeoman generator for AngularJs project.
 
 It takes advantage of the gulp build tool and makes use of bower and npm for dependency management.
@@ -14,7 +16,7 @@ It takes advantage of the gulp build tool and makes use of bower and npm for dep
 
 -----
 
-### GENERATED DIRECTORY STRUCTURE ###
+## GENERATED DIRECTORY STRUCTURE ##
 
     assets/
       app/
@@ -54,7 +56,7 @@ It takes advantage of the gulp build tool and makes use of bower and npm for dep
 
 -----
 
-### FEATURES ###
+## FEATURES ##
 - follows the project structure for [angular seed][1]
 - using 'gulp' command to develop app in development environment
 - using 'gulp production' command to release app in production environment
@@ -63,7 +65,7 @@ It takes advantage of the gulp build tool and makes use of bower and npm for dep
 
 -----
 
-### Prerequisites ###
+## Prerequisites ##
 - node.js [http://nodejs.org/][2]
 - npm [http://www.npmjs.org/][3]
 - bower [http://bower.io/][4]
@@ -73,7 +75,7 @@ It takes advantage of the gulp build tool and makes use of bower and npm for dep
 
 -----
 
-### Generators ###
+## Generators ##
 
 Available generators:
 
@@ -86,7 +88,7 @@ Available generators:
 
 **Note: Generators are to be run from the root directory of your app.**
 
-#### App ####
+### App ###
 Sets up a new AngularJS app, generating all the boilerplate you need to get started.
   
 Example:
@@ -95,7 +97,7 @@ Example:
 yo yo-angular
 ```
   
-#### Page ####
+### Page ###
 Generates a controller and view in assets/app/.
   
 Example:
@@ -126,7 +128,7 @@ Produces `assets/app/user/content.html`:
 ```
 
   
-#### Directive ####
+### Directive ###
 Generates a directive in assets/common/directives/.
   
 Example:
@@ -153,7 +155,7 @@ angular.module('ng.directive').directive('user', [function () {
 }]);
 ```
   
-#### Model ####
+### Model ###
 Generates a model in assets/common/models/.
   
 Example:
@@ -182,7 +184,7 @@ angular.module('ng.model').factory('userModel', ['$resource', function($resource
 
 ```
   
-#### Controller ####
+### Controller ###
 Generates a controller in assets/common/controllers/.
   
 Example:
@@ -204,7 +206,7 @@ angular.module('ng.controller').controller('userCtrl' ,
 
 ```
   
-#### Service ####
+### Service ###
 Generates a service in assets/common/services/.
 
 Example:
@@ -229,7 +231,7 @@ angular.module('ng.service').controller('userService' ,
   
 ----
 
-### USAGE ###
+## USAGE ##
 1) npm install -g bob76828/generator-yo-angular
 
 2) mkdir myApp && cd myApp && yo yo-angular
@@ -240,7 +242,7 @@ angular.module('ng.service').controller('userService' ,
 
 ----
 
-### Support ###
+## Support ##
 For questions and issues: [https://github.com/bob76828/generator-yo-angular/issues][8]
 
 
