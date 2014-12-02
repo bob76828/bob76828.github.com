@@ -43,7 +43,14 @@ It takes advantage of the gulp build tool and makes use of bower and npm for dep
         app.scss
       images/
       vendor/
+        plugins.js
+      404.html
+      apple-touch-icon-precomposed.png
+      crossdomain.xml
+      favicon.ico
+      humans.txt
       index.html
+      robots.txt
     bower_components/    
     node_modules/
     .bowerrc
@@ -58,6 +65,7 @@ It takes advantage of the gulp build tool and makes use of bower and npm for dep
 
 ## FEATURES ##
 - follows the project structure for [angular seed][1]
+- using [HTML5 boilerplate][9] and [bootstrap 3][10]
 - using 'gulp' command to develop app in development environment
 - using 'gulp production' command to release app in production environment
 - after run 'gulp production' command, all app files are compiled into release folder
@@ -82,7 +90,7 @@ Available generators:
 * yo-angular
 * yo-angular:page
 * yo-angular:directive
-* yo-angular:model]
+* yo-angular:model
 * yo-angular:controller
 * yo-angular:service
 
@@ -254,3 +262,5 @@ For questions and issues: [https://github.com/bob76828/generator-yo-angular/issu
   [6]: https://github.com/yeoman/yo
   [7]: https://github.com/yeoman/generator-generator
   [8]: https://github.com/henyojess/generator-gulp-ng/issues
+  [9]: http://www.initializr.com/
+  [10]: http://getbootstrap.com/
